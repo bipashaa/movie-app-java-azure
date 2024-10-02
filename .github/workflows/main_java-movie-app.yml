@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '8'
+          java-version: '11'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -51,4 +51,4 @@ jobs:
           app-name: 'java-movie-app'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A6818CDDFD8848A7B5DC202115DD6887 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE1670369AEF44EC92E84E4800367750 }}
